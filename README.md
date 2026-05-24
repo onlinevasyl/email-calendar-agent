@@ -1,7 +1,5 @@
 # 📅 Email & Calendar Events Agent
 
-🏆 Agent Academy Hackathon – Operative Track Submission
-
 ---
 
 ## 🚀 Overview
@@ -41,6 +39,13 @@ This agent:
 
 ## 🔄 Architecture
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/4ca64951-be18-4192-aa76-7bbc43df7699" />
+
+See full architecture: [architecture.md](./architecture.md)
+
+---
+
+## 📄 Agent Instructions
+See full instructions: [agent-instructions.md](./agent-instructions.md)
 
 
 ---
