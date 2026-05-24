@@ -40,7 +40,8 @@ This agent:
 ---
 
 ## 🔄 Architecture
-Email → Trigger → Agent (Claude Sonnet 4.6) → Decision Logic → Calendar / Email Actions
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/4ca64951-be18-4192-aa76-7bbc43df7699" />
+
 
 ---
 
