@@ -104,7 +104,7 @@ Define when your agent should act automatically.
 
 ## User Feedback Collection
 
-Implement User Feedbak Collection in agent's settings:
+Implement User Feedback Collection in agent's settings:
 1. Go to **Settings** → **Generative AI**
 2. Enable **Collect user reactions to agent messages** in **User Feedback** section
 
