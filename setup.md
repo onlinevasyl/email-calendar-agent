@@ -50,10 +50,11 @@ Your agent uses MCP servers for email and calendar management.
 
 ### 📧 Email Management MCP Server
 
-- Add a tool → Model Context Protocol → Email Management MCP Server
-- Connect to **Email Management MCP Server**
-- Ensure authentication is configured and connection established with your M365 Account
-- **Add and configure**
+1. Add a tool → Model Context Protocol → Email Management MCP Server
+2. Connect to **Email Management MCP Server**
+3. Ensure authentication is configured and connection established with your M365 Account
+4. **Add and configure**
+5. Reference screenshot below for configuration details
 
 ![Email MCP](screenshots/email-management_mcp_server.png)
 
@@ -61,10 +62,11 @@ Your agent uses MCP servers for email and calendar management.
 
 ### 📅 Meeting / Calendar Management MCP Server
 
-- Add tool → Model Context Protocol → Meeting Management MCP Server
-- Connect to **Meeting Management MCP Server**
-- Ensure authentication is configured and connection established with your M365 Account
-- **Add and configure**
+1. Add tool → Model Context Protocol → Meeting Management MCP Server
+2. Connect to **Meeting Management MCP Server**
+3. Ensure authentication is configured and connection established with your M365 Account
+4. **Add and configure**
+5. Reference screenshot below for configuration details
 
 ![Calendar MCP](screenshots/meeting_management_mcp_server.png)
 
@@ -74,9 +76,10 @@ Your agent uses MCP servers for email and calendar management.
 
 ### Delete Calendar Events Connector
 
-- Add tool → Connector → Delete event (V2)
-- Ensure authentication is configured and connection established with your M365 Account
-- **Add and configure**
+1. Add tool → Connector → Delete event (V2)
+2. Ensure authentication is configured and connection established with your M365 Account
+3. **Add and configure**
+4. Reference screenshot below for configuration details
 
 ![Delete Events Connector](screenshots/delete_calendar_events_connector.png)
 
@@ -95,8 +98,8 @@ Your agent uses MCP servers for email and calendar management.
 ## 🔄 Configure Triggers
 
 Define when your agent should act automatically.
-- Add to agent trigger **When a new email arrives (V3)**
-- Configure trigger parameters in Power Automate for your scenarios 
+1. Add to agent trigger **When a new email arrives (V3)**
+2. Configure trigger parameters in Power Automate for your scenarios 
 
 ![Trigger Config](screenshots/agent_trigger_config.png)
 
