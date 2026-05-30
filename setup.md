@@ -2,22 +2,23 @@
 
 
 ## 📑 Table of Contents
+- [Overview](#-overview)
+- [Prerequisites](#-prerequisites)
+- [Initial Agent Setup](#-initial-agent-setup)
+- [Configure MCP Tools](#-configure-mcp-tools)
+- [Configure Connectors](#-configure-connectors)
+- [Enable Agent Tools](#-enable-agent-tools)
+- [Configure Triggers](#-configure-triggers)
+- [Test the Agent](#-test-the-agent)
+- [Publish the Agent](#-publish-the-agent)
+- [Agent in Microsoft 365 Copilot](#-agent-in-microsoft-365-copilot)
+- [Setup Complete](#-setup-complete)
+- [Documentation References](#-documentation-references)
 
-- 🤖 Configure the Copilot Studio Agent
-- 🔧 Configure MCP Tools
-- 🔌 Configure Connectors
-- ⚙️ Configure Agent Tools
-- 🎯 Configure Triggers
-- 🧪 Test the Agent
-- 🚀 Deploy the Agent
-- 🧑‍💼 Use in Microsoft 365 Copilot
-- ✅ Setup Complete
-- 📚 Documentation References
-
-## Overview
+## 📖 Overview
 This guide walks you through setting up the Email & Calendar Events Agent in your environment.
 
-## Prerequisites
+## 📋 Prerequisites
 
 ### Required Accounts & Access
 - **Microsoft 365 Account**: For Outlook email and Calendar access, MCP Servers connections, deployment to M365 Copilot and MS Teams channels
@@ -25,45 +26,25 @@ This guide walks you through setting up the Email & Calendar Events Agent in you
 - **Power Platform Admin Role Permissions**: for managing Power Platform solution, permissions to create connections for MCP Servers, Power Platform connectors
 - **M365 Admin Role Permissions**: to allow adding agent to the Agents Store in MS Teams, M365 Copilot
 
-## Installation & Configuration
+## 🛠 Initial Agent Setup
 
-### Step 1: Set Up Microsoft Copilot Studio
+### Set Up Agent in Microsoft Copilot Studio
 1. Navigate to [Copilot Studio](https://copilotstudio.microsoft.com/)
 2. Create a new Agent in dedicated Power Platform solution
 3. Name it "Email & Calendar Events Agent"
 4. Configure the agent description
 5. Choose Claude Sonnet 4.6 as agent's AI model
-6. Set instructions (copy instructions from instructions.MD)
-
-### Step 2: Configure Email & Calendar MCP Servers
-1. In Copilot Studio, go to **Tools**
-2. Add the **New tool**
-3. Choose Model context protocol to filter available MCP Servers
-4. Reference screenshots for MCP Servers names and configurations
-5. Ensure you have proper permissions in your account to create connections for MCP Servers and enable MCP tools
-6. Test connections to ensure proper access
-
-
----
-
-## 🤖 Configure the Copilot Studio Agent
-
-1. Open **Microsoft Copilot Studio**
-2. Create a new agent:
-   - **Name:** Email & Calendar Agent
-   - **Description:** AI-powered assistant for managing emails and calendar events using MCP servers
-3. Select the model (e.g., Claude Sonnet 4.6)
-4. Add the agent instructions (see README or `docs/agent-instructions.md`)
+6. Set instructions (copy instructions from [Agent Instructions](./agent-instructions.md))
 
 ### 📸 Agent Overview
 
-![Agent Overview](screenshots/agent_overview screen.png)
+![Agent Overview](screenshots/agent_overview_screen.png)
 
-![Agent Overview 2](screenshots/agent_overview screen_2.png)
+![Agent Overview 2](screenshots/agent_overview_screen_2.png)
 
 ---
 
-## 🔧 Configure MCP Tools
+## 🧩 Configure MCP Tools
 
 Your agent uses MCP servers for email and calendar management.
 
@@ -77,7 +58,7 @@ Your agent uses MCP servers for email and calendar management.
 
 ---
 
-### 📅 Meeting / Calendar MCP Server
+### 📅 Meeting / Calendar Management MCP Server
 
 - Add tool → Model Context Protocol
 - Connect to **Meeting Management MCP Server**
@@ -90,30 +71,28 @@ Your agent uses MCP servers for email and calendar management.
 
 ### Delete Calendar Events Connector
 
-- Add custom connector or existing connector
+- Add tool → Connectors → Delete Calendar Events
 - Configure permissions and authentication
 
 ![Delete Events Connector](screenshots/delete_calendar_events_connector.png)
 
 ---
 
-## ⚙️ Configure Agent Tools
+## 🔧 Enable Agent Tools
 
-1. Navigate to **Tools section**
-2. Add all MCP tools and connectors
+1. Navigate to **Tools** section
+2. Ensure all MCP Servers and connectors are in Tools section
 3. Ensure tools are enabled
 
 ![Agent Tools](screenshots/agent_tools.png)
 
 ---
 
-## 🎯 Configure Triggers
+## 🔄 Configure Triggers
 
 Define when your agent should act automatically.
-
-- Set trigger conditions for:
-  - Email processing
-  - Calendar actions
+- Add to agent trigger **When a new email arrives (V3)**
+- Configure trigger parameters in Power Automate for your scenarios 
 
 ![Trigger Config](screenshots/agent_trigger_config.png)
 
@@ -127,14 +106,15 @@ Define when your agent should act automatically.
    - "Schedule a meeting for tomorrow"
    - "Delete my meeting at 3 PM"
 
-![Agent Test](screenshots365 Copilot
-3. Publish the agent
+![Agent Test Screen](screenshots/agent_test_screen.png)
+
+## 🚀 Publish the agent
 
 ![Deployment Channels](screenshots/deployment_channels.png)
 
 ---
 
-## 🧑‍💼 Use in Microsoft 365 Copilot
+## 🤖 Agent in Microsoft 365 Copilot
 
 Once deployed, the agent can be accessed directly in M365 Copilot.
 
@@ -150,8 +130,8 @@ Your Email & Calendar Agent is now ready to:
 
 - 📧 Manage and analyze emails  
 - 📅 Create, update, and delete calendar events  
-- 🤖 Execute actions using MCP tools  
-- ⚡ Respond to natural language requests  
+- ⚡ Execute actions using MCP tools  
+- 💬 Respond to natural language requests  
 
 ---
 
@@ -167,7 +147,7 @@ Your Email & Calendar Agent is now ready to:
 
 ---
 
-### 🔧 Model Context Protocol (MCP)
+### 🧩 Model Context Protocol (MCP)
 
 - MCP overview and concepts:  
   https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp
@@ -192,12 +172,12 @@ Your Email & Calendar Agent is now ready to:
 - Publishing Copilot Studio agents:  
   https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-fundamentals-publish-channels
 
-- Microsoft Teams integration:  
+- Microsoft Teams and M365 Copilot integration:  
   https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams
 
 ---
 
-### ⚡ Additional Learning
+### 📖 Additional Learning
 
 - Copilot Studio tools & architecture:  
   https://learn.microsoft.com/en-us/microsoft-copilot-studio/tools-overview
