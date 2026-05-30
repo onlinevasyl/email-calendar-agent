@@ -40,13 +40,18 @@ This agent:
 ## Architecture
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/4ca64951-be18-4192-aa76-7bbc43df7699" />
 
-See full architecture: [architecture.md](./architecture.md)
+See full architecture: [Architecture](./architecture.md)
 
 ---
 
 ## Agent Instructions
-See full instructions: [agent-instructions.md](./agent-instructions.md)
+See full agent instructions: [Agent Instructions](./agent-instructions.md)
 
+---
+
+## Setup Guide
+
+See full setup guide: [Setup Guide](./setup.md)
 
 ---
 
@@ -71,7 +76,7 @@ https://youtu.be/Au-E04zcU2g
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### 🔹 Agent Overview Screen
 ![Agent Overview Screen](screenshots/agent_overview_screen.png)
