@@ -50,9 +50,10 @@ Your agent uses MCP servers for email and calendar management.
 
 ### 📧 Email Management MCP Server
 
-- Add tool → Model Context Protocol
+- Add a tool → Model Context Protocol → Email Management MCP Server
 - Connect to **Email Management MCP Server**
-- Ensure authentication is configured
+- Ensure authentication is configured and connection established with your M365 Account
+- **Add and configure**
 
 ![Email MCP](screenshots/email-management_mcp_server.png)
 
@@ -60,8 +61,10 @@ Your agent uses MCP servers for email and calendar management.
 
 ### 📅 Meeting / Calendar Management MCP Server
 
-- Add tool → Model Context Protocol
+- Add tool → Model Context Protocol → Meeting Management MCP Server
 - Connect to **Meeting Management MCP Server**
+- Ensure authentication is configured and connection established with your M365 Account
+- **Add and configure**
 
 ![Calendar MCP](screenshots/meeting_management_mcp_server.png)
 
@@ -71,8 +74,9 @@ Your agent uses MCP servers for email and calendar management.
 
 ### Delete Calendar Events Connector
 
-- Add tool → Connectors → Delete Calendar Events
-- Configure permissions and authentication
+- Add tool → Connector → Delete event (V2)
+- Ensure authentication is configured and connection established with your M365 Account
+- **Add and configure**
 
 ![Delete Events Connector](screenshots/delete_calendar_events_connector.png)
 
@@ -95,6 +99,16 @@ Define when your agent should act automatically.
 - Configure trigger parameters in Power Automate for your scenarios 
 
 ![Trigger Config](screenshots/agent_trigger_config.png)
+
+---
+
+## User Feedback Collection
+
+Implement User Feedbak Collection in agent's settings:
+1. Go to **Settings** → **Generative AI**
+2. Enable **Collect user reactions to agent messages** in **User Feedback** section
+
+![User Feedback](screenshots/user_feedback_collection.png)
 
 ---
 
@@ -140,7 +154,7 @@ Your Email & Calendar Agent is now ready to:
 ### 🤖 Microsoft Copilot Studio
 
 - Overview of Copilot Studio:  
-  https://learn.microsoft.com/en-us/microsoft-copilot-studio/
+  https://learn.microsoft.com/en-us/microsoft-copilot-studio
 
 - Building and managing agents:  
   https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-first-bot
@@ -155,15 +169,24 @@ Your Email & Calendar Agent is now ready to:
 - Using MCP servers in AI workflows:  
   https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers
 
+- Email Management MCP Server
+  https://learn.microsoft.com/en-us/connectors/office365/#email-management-mcp-server-(deprecated)
+
+- Meeting Management MCP Server
+  https://learn.microsoft.com/en-us/connectors/office365/#meeting-management-mcp-server-(deprecated)
+
 ---
 
 ### 🔌 Connectors (Power Platform)
 
 - Power Platform connectors overview:  
-  https://learn.microsoft.com/en-us/connectors/
+  https://learn.microsoft.com/en-us/connectors
 
 - Creating custom connectors:  
-  https://learn.microsoft.com/en-us/connectors/custom-connectors/
+  https://learn.microsoft.com/en-us/connectors/custom-connectors
+
+- Delete Event (V2):
+  https://learn.microsoft.com/en-us/connectors/office365/#delete-event-(v2)
 
 ---
 
@@ -179,10 +202,10 @@ Your Email & Calendar Agent is now ready to:
 
 ### 📖 Additional Learning
 
-- Copilot Studio tools & architecture:  
-  https://learn.microsoft.com/en-us/microsoft-copilot-studio/tools-overview
+- Copilot Studio tools:  
+  https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent
 
-- AI agent design best practices:  
-  https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance-best-practices
+- Copilot Studio guidance documentation:  
+  https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance
 
 ---
