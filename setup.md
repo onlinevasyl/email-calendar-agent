@@ -119,6 +119,8 @@ Implement User Feedback Collection in agent's settings:
    - "Summarize my latest emails"
    - "Schedule a meeting for tomorrow"
    - "Delete my meeting at 3 PM"
+3. Create Teams meeting and send yourself calendar invitation (ensure you added your email address to autonomous trigger address filter)
+4. Check your calendar for your test event details and whether it was created correctly
 
 ![Agent Test Screen](screenshots/agent_test_screen.png)
 
