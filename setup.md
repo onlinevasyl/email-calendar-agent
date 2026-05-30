@@ -126,6 +126,11 @@ Implement User Feedback Collection in agent's settings:
 
 ## 🚀 Publish the agent
 
+1. Go to **Channels**
+2. Choose Microsoft 365 and Microsoft Teams
+3. Configure all necessary details for deployment channels.
+4. Publish your agent to make it available for deployment inside Teams/ M365 Copilot or any other channel.
+
 ![Deployment Channels](screenshots/deployment_channels.png)
 
 ---
